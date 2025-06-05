@@ -1,32 +1,5 @@
-<div align="center">
-<img src="assets/ogbench.svg" width="300px"/>
-
-<div id="user-content-toc">
-  <ul align="center" style="list-style: none;">
-    <summary>
-      <h1>OGBench: Benchmarking Offline Goal-Conditioned RL</h1>
-    </summary>
-  </ul>
-</div>
-
-<a href="https://www.python.org/"><img src="https://img.shields.io/badge/Python-3.8%2B-598BE7?style=for-the-badge&logo=python&logoColor=598BE7&labelColor=F0F0F0"/></a> &emsp;
-<a href="https://pypi.org/project/ogbench/"><img src="https://img.shields.io/pypi/v/ogbench?style=for-the-badge&labelColor=F0F0F0&color=598BE7"/></a> &emsp;
-<a href="https://docs.astral.sh/ruff/"><img src="https://img.shields.io/badge/Code style-ruff-598BE7?style=for-the-badge&labelColor=F0F0F0"/></a> &emsp;
-<a href="https://github.com/seohongpark/ogbench/blob/master/LICENSE"><img src="https://img.shields.io/badge/License-MIT-598BE7?style=for-the-badge&labelColor=F0F0F0"/></a>
-
-
-![image](assets/env_teaser.png)
-
-<div id="toc">
-  <ul align="center" style="list-style: none;">
-    <summary>
-      <h2><a href="https://arxiv.org/abs/2410.20092">Paper</a> &emsp; <a href="https://seohong.me/projects/ogbench/">Project page</a></h2>
-    </summary>
-  </ul>
-</div>
-
-
-</div>
+# We use the same environment as OGBench.
+# 用下面的方式下载环境
 
 # Overview
 
@@ -54,7 +27,7 @@ and [datasets](data_gen_scripts/commands.sh).
 
 # Quick Start
 
-### Installation
+### Installation （这个章节安装环境即可完成）
 
 OGBench can be easily installed via PyPI:
 
@@ -69,6 +42,18 @@ To use OGBench for **offline goal-conditioned RL**,
 go to [this section](#usage-for-offline-goal-conditioned-rl).
 To use OGBench for **standard (non-goal-conditioned) offline RL**,
 go to [this section](#usage-for-standard-non-goal-conditioned-offline-rl).
+
+Our reference implementations require Python 3.9+ and additional dependencies, including `jax >= 0.4.26`.
+To install these dependencies, run:
+
+```shell
+cd impls
+pip install -r requirements.txt
+```
+
+By default, it uses the PyPI version of OGBench.
+If you want to use a local version of OGBench (e.g., for training methods on modified environments),
+run instead `pip install -e ".[train]"` in the root directory.
 
 ### Usage for offline goal-conditioned RL
 
