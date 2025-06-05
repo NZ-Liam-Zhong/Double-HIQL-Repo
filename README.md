@@ -27,7 +27,7 @@ and [datasets](data_gen_scripts/commands.sh).
 
 # Quick Start
 
-### Installation （这个章节安装环境即可完成）
+### Installation （这个章节安装环境，几行代码即可完成）
 
 OGBench can be easily installed via PyPI:
 
@@ -56,7 +56,8 @@ If you want to use a local version of OGBench (e.g., for training methods on mod
 run instead `pip install -e ".[train]"` in the root directory.
 
 
-# Reproducing Datasets（这部分是生成数据集的代码）
+# Reproducing Datasets
+（这部分是生成数据集的代码，如果使用我的数据集，就不需要再麻烦一次）
 
 We provide the full scripts and exact command-line flags used to produce all the datasets in OGBench.
 The scripts are provided in the `data_gen_scripts` directory.
