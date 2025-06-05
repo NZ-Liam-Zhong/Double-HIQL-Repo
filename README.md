@@ -1,5 +1,5 @@
 # We use the same environment as OGBench.
-# 用下面的方式下载环境
+
 
 # Overview
 
